@@ -3,6 +3,7 @@ import "./LoginRegister.css"
 import {Link} from 'react-router-dom'
 import UserService from '../../services/UserService'
 import logo from '../../assets/goodmovies_logo.png';
+import NetflixImage from '../../assets/netflix_bg.jpg';
 
 import posed from 'react-pose';
 
@@ -74,10 +75,12 @@ this.userService.login(user)
     render() {
         return (
             <AnimatedDiv pose={this.state.isVisible ? 'visible' : 'hidden'} className={"background"}>
-              <div className="row col-12 justify-content-center" style={{backgroundColor: 'transparent', margin: 0}}>
-             {/* <img src={logo}/> */}
+              <div className="row justify-content-center login-page" style={{backgroundColor: 'transparent', margin: 0}}>
+              <div className="col-8">
+                <img className="image-section" src={NetflixImage} alt="netflix-img"></img>
               </div>
-                <div className={"box"}>
+              <div className="col-4 login-section">
+              <div className="box p-3">
                     <form className={"box-elements"}>
                         <h1>Sign In&nbsp;<i class="fa fa-sign-in-alt"></i></h1>
                         <input className={"form-control my-2"} type={"text"}
@@ -96,7 +99,10 @@ this.userService.login(user)
                         <Link to={"/home"} style={{color: 'white'}}>Continue as Guest</Link>
                     </form>
                 </div>
-            </AnimatedDiv>
+            
+              </div>
+              </div>
+               </AnimatedDiv>
         );
     }
 

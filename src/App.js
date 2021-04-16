@@ -16,9 +16,9 @@ class App extends Component {
             <div className="App">
                 <Router>
                     <div>
-                        <Route path="/" exact component={IntroPageComponent}/>
+                        <Route path="/" exact component={Login}/>
                         <Route path="/home" exact component={HomeContainer}/>
-                        <Route path="/login" exact component={Login}/>
+                        {/* <Route path="/login" exact component={Login}/> */}
                         <Route path="/register" exact component={Register}/>
                         <Route path="/profile" exact component={Profile}/>
                         <Route path="/profile/:id" exact component={Profile}/>

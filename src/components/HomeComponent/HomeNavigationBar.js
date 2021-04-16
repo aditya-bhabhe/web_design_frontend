@@ -15,7 +15,7 @@ export const HomeNavigationBar = ({loggedIn, userId, username, logout}) => {
             <form className="form-inline"> 
                 <div hidden={loggedIn}>
                     <Link style={{display: 'block', height: '100%'}}
-                          className="navbar-nav" to="/login">
+                          className="navbar-nav" to="/">
                         <button type='btn' className="text-white btn btn-danger">Login</button>
                     </Link>
                 </div>
