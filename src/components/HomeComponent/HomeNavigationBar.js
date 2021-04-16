@@ -28,7 +28,7 @@ export const HomeNavigationBar = ({loggedIn, userId, username, logout}) => {
                 </div>
                 <div hidden={!loggedIn}>
                     <Link style={{display: 'block', height: '100%'}}
-                          className="navbar-nav" to='/login'>
+                          className="navbar-nav" to='/'>
                         <FontAwesomeIcon icon={ faSignOutAlt }/>
                         <button type='btn' className="text-white btn" onClick={logout}>
                             Logout

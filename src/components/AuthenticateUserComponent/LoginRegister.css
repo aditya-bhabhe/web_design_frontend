@@ -13,10 +13,10 @@
 
 
 .red-button {
-    background: #e50914;
+    background: #0099fe;
     color: #fff;
-    width: 80px;
-    height: 40px;
+    /* width: 80px;
+    height: 40px; */
     font-size: 15px;
     opacity: 0.9;
     border-radius: 2px;
@@ -40,9 +40,9 @@
     height: 100%;
 }
 
-body{
+/* body{
     background-color: black !important;
-}
+} */
 
 
 .box {
@@ -54,7 +54,7 @@ body{
     padding: 45px;
     width: 300px;
     height: 525px;
-    background-color: black;
+    background-color: transparent;
     border-radius: 5px;
     color: #fff;
 }

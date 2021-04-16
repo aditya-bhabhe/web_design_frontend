@@ -3,7 +3,7 @@ import "./LoginRegister.css"
 import {Link} from 'react-router-dom'
 import UserService from '../../services/UserService'
 import logo from '../../assets/goodmovies_logo.png';
-import NetflixImage from '../../assets/netflix_bg.jpg';
+import NetflixImage from '../../assets/batman.jpg';
 
 import posed from 'react-pose';
 
@@ -76,10 +76,10 @@ this.userService.login(user)
         return (
             <AnimatedDiv pose={this.state.isVisible ? 'visible' : 'hidden'} className={"background"}>
               <div className="row justify-content-center login-page" style={{backgroundColor: 'transparent', margin: 0}}>
-              <div className="col-8">
+              {/* <div className="col-8 px-0">
                 <img className="image-section" src={NetflixImage} alt="netflix-img"></img>
-              </div>
-              <div className="col-4 login-section">
+              </div> */}
+              <div className="col-4 login-section px-0">
               <div className="box p-3">
                     <form className={"box-elements"}>
                         <h1>Sign In&nbsp;<i class="fa fa-sign-in-alt"></i></h1>
@@ -89,7 +89,7 @@ this.userService.login(user)
                         <input className={"form-control my-2"} type={"password"}
                                placeholder={"Password"} value={this.state.password}
                                onChange={this.passwordChanged}/>
-                        <button className={"red-button my-2"} type={"button"} onClick={this.login}>
+                        <button className={"red-button my-2 py-2 px-3"} type={"button"} onClick={this.login}>
                             Sign In 
                         </button>
                         <p>

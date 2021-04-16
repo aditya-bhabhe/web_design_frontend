@@ -191,7 +191,7 @@ class Register extends React.Component {
                             <option value="admin">Admin</option>
                         </select>
 
-                        <button className={"red-button my-2"} onClick={this.registerUser}
+                        <button className={"red-button my-2 py-2 px-3"} onClick={this.registerUser}
                                 type={"button"}>
                             Sign Up
                         </button>

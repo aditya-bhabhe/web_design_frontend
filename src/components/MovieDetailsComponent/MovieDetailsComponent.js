@@ -260,7 +260,6 @@ class MovieDetailsComponent extends React.Component {
                                         Date: {this.state.movie.release_date}</h6>
                                     <h6 className="white-title">Runtime: {this.state.movie.runtime} minutes</h6>
                                 </div>
-                                //fdewrwe
                                 {/* <div className="col-md-4 col-xs-5">
                                     <h3 className="white-title">Twitter Feed
                                         <i className="fa fa-twitter"></i>
@@ -366,7 +365,7 @@ class MovieDetailsComponent extends React.Component {
                                         Date: {this.state.movie.release_date}</h6>
                                     <h6 className="white-title">Runtime: {this.state.movie.runtime} minutes</h6>
                                 </div>
-                                <div className="col-md-4 col-xs-5">
+                                {/* <div className="col-md-4 col-xs-5">
                                     <h3 className="white-title">Twitter Feed
                                         <i className="fa fa-twitter"></i>
                                     </h3>
@@ -383,7 +382,7 @@ class MovieDetailsComponent extends React.Component {
                                                 movie</h6>
                                         }
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                             <br/>
                             <h3 className="white-title">Cast</h3>
