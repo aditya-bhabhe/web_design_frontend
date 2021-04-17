@@ -8,7 +8,11 @@
 }
 
 .color-dark{
-    color: #011422;
+    color: #011422 !important;
+}
+
+.color-yellow{
+    color: yellow !important;
 }
 
 
@@ -40,6 +44,72 @@
     height: 100%;
 }
 
+.wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    color: #eee;
+}
+
+.flip-section{
+    overflow: hidden;
+    position: absolute;
+    font-size: xx-large;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        float: right;
+        height: 65px;
+        padding-top: 10px;
+        margin-top: -10px;
+}
+
+.flip-section li{
+    font-family: Serif;
+            color: #eee;
+            font-weight: 700;
+            padding: 0 10px;
+            height: 45px;
+            margin-bottom: 45px;
+            display: block;
+}
+
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
 /* body{
     background-color: black !important;
 } */
@@ -53,7 +123,7 @@
     margin: auto;
     padding: 45px;
     width: 300px;
-    height: 525px;
+    /* height: 525px; */
     background-color: transparent;
     border-radius: 5px;
     color: #fff;
