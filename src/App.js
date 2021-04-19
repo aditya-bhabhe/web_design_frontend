@@ -9,6 +9,7 @@ import MovieSearchComponent from "./components/MovieSearchComponent/MovieSearchC
 import UserSearchComponent from "./components/UserSearchComponent/UserSearchComponent";
 import IntroPageComponent from "./components/IntroPageComponent/IntroPageComponent";
 import MovieBookingComponent from "./components/MovieBookingComponent/MovieBookingComponent";
+import RenderMovie from './components/RenderMovie/RenderMovie';
 
 class App extends Component {
     render() {
@@ -26,6 +27,7 @@ class App extends Component {
                         <Route path='/movie/search/:query' exact component={MovieSearchComponent}/>
                         <Route path='/user/search/:query' exact component={UserSearchComponent}/>
                         <Route path = '/movie/:movieId/booking' exact component={MovieBookingComponent}/>
+                        <Route path = '/streaming/:search/:movieId' exact component={RenderMovie}/>
                     </div>
                 </Router>
             </div>

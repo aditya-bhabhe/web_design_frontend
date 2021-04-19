@@ -20,6 +20,7 @@ const AnimatedDiv = posed.div({
 class MovieDetailsComponent extends React.Component {
     constructor(props) {
         super(props);
+        this.userService = new UserService();
         this.state = {
             movie: '',
             cast: [],
@@ -132,11 +133,17 @@ class MovieDetailsComponent extends React.Component {
         this.props.history.push('/login');
     };
 
+    handleStream = (event) => {
+        console.log("hitsss")
+        this.props.history.push("/streaming/" + this.state.movie.original_title +"/" + this.props.match.params.movieId);
+    }
+
     backToSearchResults() {
         this.props.history.goBack();
     }
 
     render() {
+        console.log(this.state.movie, "movie")
         if (this.state.userProfile.message === 'You are not logged in') {
             return (
                 <AnimatedDiv style={{
@@ -250,6 +257,11 @@ class MovieDetailsComponent extends React.Component {
                                         <AddToWatchlistComponent
                                      movie={this.state.movie}
                                                                userId={this.state.userProfile._id}/>
+
+                                    }
+                                    {
+                                        this.state.userProfile.isGold &&
+                                        <button onClick={this.handleStream}>Strem Online</button>
                                     }
                                 </div>
                                 <div className="col-md-5 col-xs-5">
@@ -355,6 +367,10 @@ class MovieDetailsComponent extends React.Component {
                                         <AddToWatchlistComponent
                                      movie={this.state.movie}
                                                                userId={this.state.userProfile._id}/>
+                                    }
+                                    {
+                                        this.state.userProfile.isGold &&
+                                        <button onClick={this.handleStream}>Strem Online</button>
                                     }
                                 </div>
                                 <div className="col-md-5 col-xs-5">

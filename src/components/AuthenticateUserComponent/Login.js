@@ -83,7 +83,7 @@ class Login extends React.Component {
             <div className="box p-3">
               <form className={"box-elements"}>
                 <h1 className="mb-3">
-                  Register&nbsp;<i class="fa fa-sign-in-alt"></i>
+                  Login&nbsp;<i class="fa fa-sign-in-alt"></i>
                 </h1>
                 <input
                   className={"form-control my-2"}
