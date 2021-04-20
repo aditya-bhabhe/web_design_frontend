@@ -76,13 +76,13 @@ class IntroPageComponent extends React.Component {
         <AnimatedDivText1
           pose={this.state.isVisibleText1 ? "visible" : "hidden"}
         >
-          <h1 className="white-title some-pad">Welcome to Flix Farm</h1>
+          <h1 className="white-title some-pad">Welcome to NUFlix</h1>
         </AnimatedDivText1>
 
         <AnimatedDivText2
           pose={this.state.isVisibleText2 ? "visible" : "hidden"}
         >
-          <h4 className="white-title">Discover the movies of your kind</h4>
+          <h4 className="white-title">Find Movies of your choice</h4>
         </AnimatedDivText2>
         <br />
 

@@ -17,7 +17,7 @@ const FooterPage = () => {
           <MDBCol md="3">
             <p align="justify" className='ml-5'> 
             <FontAwesomeIcon icon="map-marked" color="grey" /> &nbsp;
-                <span>203 Fake St. Mountain View, <br></br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boston, Massachusetts, <br></br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  USA - 02215</span><br></br>
+                <span>405 Ell Hall, <br></br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boston, Massachusetts, <br></br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  USA - 02215</span><br></br>
               </p>
           </MDBCol>
           <MDBCol md="2" className='ml-5'>

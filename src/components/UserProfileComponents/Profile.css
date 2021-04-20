@@ -4,13 +4,13 @@ body {
 }
 
 body {
-  background: url("../../assets/batman5.jpg") !important;
+  background: url("https://media.giphy.com/media/Id71NFYfSBOKv2IexE/giphy.gif") !important;
   background-position: center center !important;
   background-repeat: revert !important;
   background-attachment: fixed;
   background-size: cover !important;
   height: 100% !important;
-  background-color: #2d3436 !important;
+  background-color: transparent !important;
   background-blend-mode: overlay !important;
 }
 

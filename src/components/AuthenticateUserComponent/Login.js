@@ -2,6 +2,9 @@ import React from 'react';
 import "./LoginRegister.css"
 import {Link} from 'react-router-dom'
 import UserService from '../../services/UserService'
+
+import HomeNavigationBar from '../HomeComponent/HomeContainer.js'
+
 import logo from '../../assets/goodmovies_logo.png';
 import NetflixImage from '../../assets/batman.jpg';
 
@@ -11,6 +14,10 @@ const AnimatedDiv = posed.div({
   hidden: { opacity: 0 },
   visible: { opacity: 1}
 });
+const AnimatedDiv1 = posed.div({
+    hidden: { opacity: 0 },
+    visible: { opacity: 1}
+  });
 
 class Login extends React.Component {
     constructor(props) {
@@ -74,29 +81,38 @@ this.userService.login(user)
 
     render() {
         return (
+           
+         
+      
             <AnimatedDiv pose={this.state.isVisible ? 'visible' : 'hidden'} className={"background"}>
               <div className="row justify-content-center login-page" style={{backgroundColor: 'transparent', margin: 0}}>
               {/* <div className="col-8 px-0">
                 <img className="image-section" src={NetflixImage} alt="netflix-img"></img>
               </div> */}
+              
               <div className="col-4 login-section px-0">
               <div className="box p-3">
                     <form className={"box-elements"}>
-                        <h1>Sign In&nbsp;<i class="fa fa-sign-in-alt"></i></h1>
+                      <center>
+                        <h1>Sign In&nbsp;<i class="fa fa-sign-in-alt "></i></h1>
+                        </center><br></br>
                         <input className={"form-control my-2"} type={"text"}
                                placeholder={"Username"} value={this.state.username}
-                               onChange={this.usernameChanged}/>
+                               onChange={this.usernameChanged}/><br></br>
                         <input className={"form-control my-2"} type={"password"}
                                placeholder={"Password"} value={this.state.password}
-                               onChange={this.passwordChanged}/>
-                        <button className={"red-button my-2 py-2 px-3"} type={"button"} onClick={this.login}>
+                               onChange={this.passwordChanged}/><br></br>
+                        <center>
+                            <button className={"red-button my-2 py-2 px-3"} type={"button"} onClick={this.login}>
                             Sign In 
                         </button>
+                       <br></br>
                         <p>
                             <Link to={"/register"} style={{color: 'white'}}>Not a member?&nbsp;Sign Up here!</Link>
                         </p>
-                        <br/>
+                        
                         <Link to={"/home"} style={{color: 'white'}}>Continue as Guest</Link>
+                        </center>
                     </form>
                 </div>
             

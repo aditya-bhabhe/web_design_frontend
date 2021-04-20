@@ -190,7 +190,7 @@ class Register extends React.Component {
                             <option value="critic">Critic</option>
                             <option value="admin">Admin</option>
                         </select>
-
+                        <center>
                         <button className={"red-button my-2 py-2 px-3"} onClick={this.registerUser}
                                 type={"button"}>
                             Sign Up
@@ -200,6 +200,7 @@ class Register extends React.Component {
                               Already a member?&nbsp;Sign in here!</Link>
                         </p>
                         <Link to={"/home"} style={{color: 'white'}}>Continue as Guest</Link>
+                        </center>
                     </form>
                 </div>
             </AnimatedDiv>

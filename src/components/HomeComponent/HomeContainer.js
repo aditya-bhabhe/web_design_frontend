@@ -287,9 +287,9 @@ export default class HomeContainer extends React.Component {
               <select
                 style={{
                   width: "100px",
-                  backgroundColor: "rgb(255,255,255,1)",
-                  color: "black",
-                  borderRadius: "20px",
+                  backgroundColor: "#011422",
+                  color: "#0099fe",
+                  borderRadius: "18px",
                   height: "50px",
                   fontSize: "18px",
                 }}
@@ -300,8 +300,16 @@ export default class HomeContainer extends React.Component {
                 <option value="user">Users</option>
               </select>
               <button
+              style={{
+                width: "100px",
+                backgroundColor: "#011422",
+                color: "#0099fe",
+                borderRadius: "18px",
+                height: "50px",
+                fontSize: "18px",
+              }}
                 type="btn"
-                className="text-white btn btn-outline-success ml-2"
+                className="text-blue btn"
                 onClick={this.searchButtonClicked}
               >
                 GO
